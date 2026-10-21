@@ -259,8 +259,7 @@ directory `dist`. Add the environment variables from the table above.
 `vercel.json` provides the SPA rewrite and the security headers. On other
 static hosts, add a rewrite of all routes to `/index.html`.
 
-More detail: `docs/DEPLOYMENT.md` and `docs/OPERATOR_GUIDE.md`. Both still
-list only migrations `001` to `010`; run all of the files below.
+More detail: `docs/DEPLOYMENT.md` and `docs/OPERATOR_GUIDE.md`.
 
 ## Migrations
 
