@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 035: guest reports carry 18+ / Terms consent
+-- Stray's Call — migration 035: guest reports carry 18+ / Terms consent
 -- ----------------------------------------------------------------------------
 -- Guests report on an anonymous session, which has no profiles row (the
 -- handle_new_user trigger skips anonymous users), so 034's profile columns

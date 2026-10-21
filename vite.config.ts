@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 /**
- * PawLine build configuration.
+ * Stray's Call build configuration.
  *
  * The PWA plugin generates the web app manifest and a service worker:
  *  - The app shell (JS/CSS/fonts) is precached, so the UI opens instantly

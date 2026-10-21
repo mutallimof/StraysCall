@@ -1,8 +1,8 @@
 {
-  "name": "pawline",
+  "name": "strays-call",
   "private": true,
   "version": "1.0.0",
-  "description": "PawLine — report, rescue and treat injured stray animals. PWA for Azerbaijan (and later Turkey).",
+  "description": "Stray's Call — report, rescue and treat injured stray animals. PWA for Azerbaijan (and later Turkey).",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 039: vet-documents accepts only images and PDF
+-- Stray's Call — migration 039: vet-documents accepts only images and PDF
 -- ----------------------------------------------------------------------------
 -- The bucket was created in 014 with no type restriction, so any file could
 -- be uploaded as a clinic document. Storage now refuses anything but JPEG,

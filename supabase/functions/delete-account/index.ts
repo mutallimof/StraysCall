@@ -1,5 +1,5 @@
 // ============================================================================
-// PawLine — delete-account Edge Function
+// Stray's Call — delete-account Edge Function
 // ----------------------------------------------------------------------------
 // Self-serve account deletion, database AND files. The database part is
 // delete_my_account() (009, fixed in 037), called here with the caller's own

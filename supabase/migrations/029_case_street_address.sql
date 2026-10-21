@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 029: reverse-geocoded street address on a case
+-- Stray's Call — migration 029: reverse-geocoded street address on a case
 -- ----------------------------------------------------------------------------
 -- (Internal name unchanged; the app's display name is now Stray's Call.)
 --

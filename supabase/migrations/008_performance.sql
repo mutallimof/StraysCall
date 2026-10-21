@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 008: performance (load-test driven)
+-- Stray's Call — migration 008: performance (load-test driven)
 -- ----------------------------------------------------------------------------
 -- Load test: 50,000 users (clustered Baku districts, realistic 5/80/15
 -- all/nearby/off preference mix) + 5,000 open cases. See docs/OPERATIONS.md

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 004: explicit privilege grants
+-- Stray's Call — migration 004: explicit privilege grants
 -- ----------------------------------------------------------------------------
 -- WHY THIS EXISTS
 -- Postgres has TWO independent gates in front of every query:

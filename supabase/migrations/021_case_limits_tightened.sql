@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 021: tighter per-reporter case-creation limits
+-- Stray's Call — migration 021: tighter per-reporter case-creation limits
 -- ----------------------------------------------------------------------------
 -- Reports are never created through an RPC — the client does a plain
 -- `insert into cases` under RLS ("signed-in or anonymous sessions can

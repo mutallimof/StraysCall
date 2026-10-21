@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 003: production readiness
+-- Stray's Call — migration 003: production readiness
 -- ----------------------------------------------------------------------------
 -- Run after 001 and 002. Adds, in order:
 --   1. Admin role + user bans
@@ -511,7 +511,7 @@ create policy "admins delete sponsors"
 --      with local density, not total user count. (Existing users keep 'all'.)
 --   b. Partial indexes so the fan-out SELECT and the unread-badge query stay
 --      index-only as tables grow.
--- If PawLine reaches hundreds of thousands of users, move this fan-out to a
+-- If Stray's Call reaches hundreds of thousands of users, move this fan-out to a
 -- queued Edge Function — everything else already holds (see ARCHITECTURE.md).
 -- ============================================================================
 

@@ -1,4 +1,4 @@
-# PawLine — Deployment Guide
+# Stray's Call — Deployment Guide
 
 Exact steps from zero to a live production app. Nothing here requires prior
 backend experience, but the ⚠ boxes mark the places where a mistake has real
@@ -16,9 +16,27 @@ the app is a static bundle; only the backend on Supabase matters.)
 1. [supabase.com](https://supabase.com) → **New project**. Region: Frankfurt
    (`eu-central-1`) — closest to Azerbaijan. Choose a strong database
    password and store it in a password manager.
-2. **SQL Editor** → run, in order:
-   `supabase/migrations/001_init.sql` → `002_locale.sql` →
-   `003_production.sql` → `004_grants.sql` → `005_security.sql` → `006_features.sql` → `007_prelaunch.sql` → `008_performance.sql` → `009_prelaunch2.sql` → `010_vet_hours.sql`.
+2. **SQL Editor** → run every file in `supabase/migrations/`, in this order:
+   `001_init.sql` → `002_locale.sql` → `003_production.sql` →
+   `004_grants.sql` → `005_security.sql` → `006_features.sql` →
+   `007_prelaunch.sql` → `008_performance.sql` → `009_prelaunch2.sql` →
+   `010_vet_hours.sql` → `011_security.sql` → `012_dm_restriction.sql` →
+   `013_escalation_timeline.sql` → `014_vet_profiles.sql` →
+   `015_reporter_abuse.sql` → `016_locale_ru.sql` →
+   `017_case_chat_read_state.sql` → `018_private_case_photos.sql` →
+   `019_vets_upsert_grant.sql` → `020_upsert_my_vet_rpc.sql` →
+   `021_case_limits_tightened.sql` → `022_case_urgency.sql` →
+   `023_xp_retune_and_review_lists.sql` → `024_oauth_signup_metadata.sql` →
+   `025_become_vet_rpc.sql` → `027_case_pinned_message.sql` →
+   `028_pin_own_message_only.sql` → `029_case_street_address.sql` →
+   `030_admin_list_users.sql` → `031_photo_uploads_ban_check.sql` →
+   `032_vet_only_dms_and_closable_case_chat.sql` →
+   `033_ban_case_actions.sql` → `034_terms_consent.sql` →
+   `035_guest_report_consent.sql` → `036_case_privacy.sql` →
+   `037_delete_account_fix.sql` → `038_retention.sql` →
+   `039_vet_documents_mime.sql` → `040_notification_types.sql` →
+   `041_case_needs.sql`.
+   There is no `026` file (it never existed); go from `025` to `027`.
    (004 grants the baseline table privileges explicitly — without it, the
    dashboard's "Automatically expose new tables" toggle being off causes
    403s on every query even though RLS is correct.)
@@ -75,7 +93,7 @@ supabase functions deploy send-push --no-verify-jwt
 
 That's it — every in-app notification row now also goes out as a push
 message to subscribed devices. Users opt in from Profile → 🔔 Enable push.
-(iPhone users must add PawLine to their home screen first — iOS rule.)
+(iPhone users must add Stray's Call to their home screen first — iOS rule.)
 
 ## Step 3 — Deploy the frontend on Vercel
 

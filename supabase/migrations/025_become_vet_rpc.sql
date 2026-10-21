@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 025: become_vet() — a second on-ramp into vet setup
+-- Stray's Call — migration 025: become_vet() — a second on-ramp into vet setup
 -- ----------------------------------------------------------------------------
 -- Until now, role='vet' was only ever set at signup, by handle_new_user()
 -- (014/024) reading the isVet toggle's 'role' key out of raw_user_meta_data

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 034: age (18+) and terms consent, recorded server-side
+-- Stray's Call — migration 034: age (18+) and terms consent, recorded server-side
 -- ----------------------------------------------------------------------------
 -- A sign-up checkbox alone is bypassable, so the acceptance is stored on the
 -- profile. Same pattern as record_safety_ack (009): a SECURITY DEFINER

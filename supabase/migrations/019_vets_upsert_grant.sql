@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 019: fix vets upsert 403 (missing UPDATE grant on id)
+-- Stray's Call — migration 019: fix vets upsert 403 (missing UPDATE grant on id)
 -- ----------------------------------------------------------------------------
 -- upsertVet() does an upsert (Prefer: resolution=merge-duplicates), which
 -- PostgREST implements as INSERT ... ON CONFLICT (id) DO UPDATE SET <every

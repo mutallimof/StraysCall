@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 015: C4, reporter abuse flagging
+-- Stray's Call — migration 015: C4, reporter abuse flagging
 -- ----------------------------------------------------------------------------
 -- Source: docs/FIX_SPEC.md, C4. Run after 001–014.
 --

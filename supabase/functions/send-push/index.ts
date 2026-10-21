@@ -1,5 +1,5 @@
 // ============================================================================
-// PawLine — send-push Edge Function
+// Stray's Call — send-push Edge Function
 // ----------------------------------------------------------------------------
 // Delivers a Web Push message for every new row in public.notifications.
 // Wire-up (full steps in docs/DEPLOYMENT.md):

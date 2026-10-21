@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — initial schema
+-- Stray's Call — initial schema
 -- ----------------------------------------------------------------------------
 -- Everything security- or consistency-critical lives here, in the database:
 --

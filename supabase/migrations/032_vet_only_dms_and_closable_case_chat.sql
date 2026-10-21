@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 032: DMs are user → clinic only; admins can read them;
+-- Stray's Call — migration 032: DMs are user → clinic only; admins can read them;
 -- the case's vet can close its case chat
 -- ----------------------------------------------------------------------------
 -- A. DIRECT MESSAGES: USER → CLINIC ONLY

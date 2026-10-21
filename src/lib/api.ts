@@ -211,7 +211,7 @@ export async function resolvePhotoUrls(cases: CaseWithDetails[]): Promise<void> 
  * useCases()/useCase() when realtime reports a case turning hidden, so
  * every currently-open tab (not just the admin's) purges immediately
  * rather than waiting out the 7-day cache expiry. This only reaches
- * devices with PawLine open right now; it is not a substitute for the
+ * devices with Stray's Call open right now; it is not a substitute for the
  * short signed-URL expiry, which is what actually bounds a closed
  * device's access.
  */

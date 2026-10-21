@@ -93,7 +93,7 @@ export async function reverseGeocode(lat: number, lng: number): Promise<string |
 }
 
 /**
- * Calm, warm map style matching PawLine's palette — desaturated, low-noise
+ * Calm, warm map style matching Stray's Call's palette — desaturated, low-noise
  * (no POI pins or transit icons competing with case markers).
  */
 export const MAP_STYLE: google.maps.MapTypeStyle[] = [

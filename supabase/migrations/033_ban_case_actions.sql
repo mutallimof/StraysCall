@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 033: banned accounts can't move cases or manage chats
+-- Stray's Call — migration 033: banned accounts can't move cases or manage chats
 -- ----------------------------------------------------------------------------
 -- accept_case (007) and flag_not_here (007) already refuse banned accounts,
 -- as do reporting (enforce_case_limits, 021), case-chat posting (032 policy)

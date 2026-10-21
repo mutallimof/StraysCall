@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 020: upsert_my_vet() RPC (fixes vets upsert 403)
+-- Stray's Call — migration 020: upsert_my_vet() RPC (fixes vets upsert 403)
 -- ----------------------------------------------------------------------------
 -- WHY THIS EXISTS
 -- upsertVet() called supabase.from('vets').upsert(vet) directly. PostgREST's

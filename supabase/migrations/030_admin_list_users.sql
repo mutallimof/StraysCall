@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 030: admin_list_users() for the Admin → Users tab
+-- Stray's Call — migration 030: admin_list_users() for the Admin → Users tab
 -- ----------------------------------------------------------------------------
 -- The Users tab needs, per account, fields that column grants deliberately
 -- hide from every signed-in session (005): `banned`, `is_admin`, and the

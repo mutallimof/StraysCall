@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 024: handle_new_user() picks up OAuth metadata
+-- Stray's Call — migration 024: handle_new_user() picks up OAuth metadata
 -- ----------------------------------------------------------------------------
 -- Prompted by adding "Continue with Google" (client-side only otherwise —
 -- no schema change needed for the OAuth flow itself, since Supabase Auth

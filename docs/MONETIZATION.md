@@ -1,4 +1,4 @@
-# PawLine — Monetization & Partnership Recommendation
+# Stray's Call — Monetization & Partnership Recommendation
 
 *Based on the research pass of July 2026. This is the part only a human can
 execute: relationships, emails, meetings. The app-side infrastructure
@@ -6,7 +6,7 @@ execute: relationships, emails, meetings. The app-side infrastructure
 
 ## The one-paragraph conclusion
 
-PawLine should not try to make money from users, rescuers, or vets in year
+Stray's Call should not try to make money from users, rescuers, or vets in year
 one — every comparable platform that did so before reaching critical mass
 died, and this category runs on trust. The realistic, non-trust-eroding
 model is **layered**: (1) corporate sponsorship from pet-adjacent and
@@ -32,8 +32,8 @@ eventually pay for or partner around.
   vibes: Purina/Mars-scale programs, and dozens of smaller brands, fund
   shelters and welfare tech for brand association. Their stated criteria:
   transparency, measurable impact, year-round presence — all things
-  PawLine's public case history provides natively ("X animals reached a
-  vet this month via PawLine, supported by ___").
+  Stray's Call's public case history provides natively ("X animals reached a
+  vet this month via Stray's Call, supported by ___").
 - **Cause-driven apps that monetized users failed or stalled**; the ones
   that survived (Nextdoor et al.) monetized *organizations* wanting access
   to an engaged local audience — and only after liquidity. The hyperlocal
@@ -42,7 +42,7 @@ eventually pay for or partner around.
 - **Turkey specifically**: the 2021 law created a state **Animal Welfare
   Fund** that finances municipalities and *nonprofits/activists* for
   animal-welfare work, and HAYTAP federates ~70 provincial organizations.
-  Entering Turkey through partnership (offering PawLine as infrastructure
+  Entering Turkey through partnership (offering Stray's Call as infrastructure
   to those organizations) is both the growth strategy and the funding
   strategy — the same conversation.
 
@@ -51,7 +51,7 @@ eventually pay for or partner around.
 **Tier 1 — credibility partners (free, do first).** Baku Street Dog Rescue,
 BakuPAWS, BARS, GWARP, ASPA/AARC. Offer: verified organization presence,
 their clinics/contacts in the vet directory, the "Partners" strip, and
-their cases amplified. Ask: they announce PawLine to their followers and
+their cases amplified. Ask: they announce Stray's Call to their followers and
 route "we're at capacity" reports through it. Value: this is what makes the
 app *work* (supply of rescuers), and sponsor conversations become 10×
 easier with recognizable partner logos already on screen.
@@ -68,7 +68,7 @@ easier with recognizable partner logos already on screen.
    funds Azerbaijani orgs (GWARP) — a grant application route, plus pet
    brands' global giving programs once there's traction data.
 
-**The pitch (one paragraph you can adapt):** "PawLine is the app people in
+**The pitch (one paragraph you can adapt):** "Stray's Call is the app people in
 Baku use to get injured street animals to a vet — every rescue is public,
 timestamped, and photographed from report to recovery. Sponsorship puts
 your brand on every one of those moments: a 'Supported by' placement in
