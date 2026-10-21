@@ -345,37 +345,6 @@ docs/                      ARCHITECTURE, DEPLOYMENT, OPERATOR_GUIDE, OPERATIONS,
                            privacy-policy-draft, strays-call-spec, design-v3/
 ```
 
-## Screenshots
-
-Phone viewport, 390x844. The images below have not been captured yet. The
-app needs a Supabase project to render any screen, so each one has to be
-taken on a running backend with demo data.
-
-TODO: save each screenshot under `docs/screenshots/` with the file name
-shown, then remove the comment markers around the image lines below.
-
-| Screen | Route | File |
-| --- | --- | --- |
-| Home map with open cases | `/` | `docs/screenshots/home-map.png` |
-| Report flow | `/report` | `docs/screenshots/report-flow.png` |
-| Case detail with status timeline | `/case/:id` | `docs/screenshots/case-detail.png` |
-| Vet picker | `/case/:id/vets` | `docs/screenshots/vet-picker.png` |
-| Case chat | `/case/:id/chat` | `docs/screenshots/case-chat.png` |
-| Vet dashboard | `/vet-dashboard` | `docs/screenshots/vet-dashboard.png` |
-| Admin | `/admin` | `docs/screenshots/admin.png` |
-| Notifications | `/alerts` | `docs/screenshots/notifications.png` |
-
-<!-- TODO: uncomment once the files exist
-<img src="docs/screenshots/home-map.png" width="240" alt="Home map">
-<img src="docs/screenshots/report-flow.png" width="240" alt="Report flow">
-<img src="docs/screenshots/case-detail.png" width="240" alt="Case detail">
-<img src="docs/screenshots/vet-picker.png" width="240" alt="Vet picker">
-<img src="docs/screenshots/case-chat.png" width="240" alt="Case chat">
-<img src="docs/screenshots/vet-dashboard.png" width="240" alt="Vet dashboard">
-<img src="docs/screenshots/admin.png" width="240" alt="Admin">
-<img src="docs/screenshots/notifications.png" width="240" alt="Notifications">
--->
-
 ## Scope and limitations
 
 - No in-app payments. Clinics can share bank details in the case chat; money
