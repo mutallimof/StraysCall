@@ -13,8 +13,12 @@ How a case moves through the app:
 3. The rescuer picks a verified clinic. The clinic confirms it can take the
    animal, the rescuer marks that they are on the way, and the clinic confirms
    delivery.
-4. Everyone following the case sees status changes in real time. Each case
-   has a group chat; the clinic can pin one of its own messages (for example
+4. Open case screens update without a reload when the status changes. The
+   app does not receive case rows over Realtime; it listens for changes to
+   the small `case_signals` table (a case id and a timestamp, updated by a
+   trigger when a public case column changes) and for new `case_events`
+   rows, then fetches the case again through the API. People following a
+   case also get a notification. Each case has a group chat; the clinic can pin one of its own messages (for example
    bank details for treatment costs). Payments happen outside the app.
 
 The case statuses are `open`, `accepted`, `vet_selected`, `vet_confirmed`,
