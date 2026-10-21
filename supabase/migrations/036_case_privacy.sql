@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 036: case privacy (live location, server-only columns)
+-- Stray's Call — migration 036: case privacy (live location, server-only columns)
 -- ----------------------------------------------------------------------------
 -- public.cases was readable column-for-column by anyone, including anon
 -- (004: `grant select on public.cases to anon, authenticated`, no column

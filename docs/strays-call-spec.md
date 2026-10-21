@@ -1,4 +1,4 @@
-# PawLine — fix spec
+# Stray's Call — fix spec
 
 Source: two-person test session + RLS audit, Sept 2026.
 Groups are ordered by dependency. Do not reorder.

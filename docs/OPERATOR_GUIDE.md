@@ -1,4 +1,4 @@
-# PawLine — Operator's Guide
+# Stray's Call — Operator's Guide
 
 *Written for you personally, as the non-technical owner. Part A takes you
 from "code on GitHub" to "live app real people can use," assuming you're
@@ -26,7 +26,7 @@ you what success looks like.
 ### A1. Supabase — the database and backend (~30 min)
 
 1. Go to **supabase.com** → Sign in with GitHub → **New project**.
-   - Name: `pawline` · Region: **Frankfurt (eu-central-1)** (closest to
+   - Name: `strays-call` · Region: **Frankfurt (eu-central-1)** (closest to
      Azerbaijan) · Database password: generate in your password manager.
    - ✅ *Success looks like:* a project dashboard with a left sidebar
      (Table Editor, SQL Editor, Authentication…).
@@ -112,7 +112,7 @@ your bill.
 ### A4. Vercel — putting the app on the internet (~15 min)
 
 1. **vercel.com** → sign in with GitHub → **Add New… → Project** → Import
-   your PawLine repository. Vercel auto-detects everything (Vite) —
+   your Stray's Call repository. Vercel auto-detects everything (Vite) —
    don't change build settings.
 2. Before clicking Deploy, open **Environment Variables** and add exactly
    these four:
@@ -129,7 +129,7 @@ your bill.
    - ⚠ Never create a variable containing the service_role key or the
      VAPID **private** key. Anything starting `VITE_` becomes public.
 3. **Deploy.** ✅ *Success:* a confetti screen and a live URL like
-   `https://pawline.vercel.app`. Open it on your phone.
+   `https://strays-call.vercel.app`. Open it on your phone.
 4. Update the Google Maps key restriction (A3) to include this exact URL
    with `/*` on the end, if you hadn't yet.
 
@@ -160,7 +160,7 @@ your bill.
    its case from the other account → a push notification arrives. ✅
 7. Airplane mode → try to report → "saved, will send when online" → turn
    the network back on → it submits itself. ✅
-8. Sign in → Profile → the "PawLine so far" section loads its three
+8. Sign in → Profile → the "Stray's Call so far" section loads its three
    platform-wide numbers. ✅
 
 If any step fails: the matching section of `docs/DEPLOYMENT.md` has the
@@ -293,7 +293,7 @@ the key below exists; without it, guest reporting still works and the
 database circuit breaker still bounds abuse). To turn it on:
 
 1. **dash.cloudflare.com** → sign up free → left menu **Turnstile** →
-   **Add widget**. Name: `pawline` · Domains: your Vercel URL and your
+   **Add widget**. Name: `strays-call` · Domains: your Vercel URL and your
    custom domain (no `https://`, just the hostname) · Mode: **Managed**
    (invisible for almost everyone; shows a checkbox only to suspicious
    traffic). Create → copy BOTH the **Site Key** and the **Secret Key**
@@ -327,7 +327,7 @@ in ~15 minutes:
   computer, with the database connection string from Supabase → Settings →
   Database (URI tab):
   ```bash
-  pg_dump "YOUR-CONNECTION-STRING" -Fc -f pawline-$(date +%F).dump
+  pg_dump "YOUR-CONNECTION-STRING" -Fc -f strays-call-$(date +%F).dump
   ```
   Keep the file somewhere safe (it contains user data — treat it like a
   password). ~2 MB per 50k users, so storage is a non-issue.
@@ -337,7 +337,7 @@ in ~15 minutes:
    click restore — the project restores in place, expect a few minutes of
    downtime), **or** for a manual dump into a fresh/second project:
    ```bash
-  pg_restore -d "NEW-PROJECT-CONNECTION-STRING" --no-owner --no-acl pawline-YYYY-MM-DD.dump
+  pg_restore -d "NEW-PROJECT-CONNECTION-STRING" --no-owner --no-acl strays-call-YYYY-MM-DD.dump
    ```
 2. **Verify — don't assume.** In the SQL editor of the restored project:
    ```sql

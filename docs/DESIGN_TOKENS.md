@@ -1,4 +1,4 @@
-# PawLine Design Tokens
+# Stray's Call Design Tokens
 
 Status: **proposed — not yet implemented in code.**
 

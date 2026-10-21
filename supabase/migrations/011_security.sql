@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 011: Group A security fixes
+-- Stray's Call — migration 011: Group A security fixes
 -- ----------------------------------------------------------------------------
 -- Source: docs/FIX_SPEC.md, Group A. Run after 001–010.
 --

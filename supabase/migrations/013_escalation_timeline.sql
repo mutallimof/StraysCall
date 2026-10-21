@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 013: escalation visibility (B5)
+-- Stray's Call — migration 013: escalation visibility (B5)
 -- ----------------------------------------------------------------------------
 -- escalate_stale_cases() (006_features.sql) already re-notifies nearby-pref
 -- users when a case has sat open 30+ minutes — that part of B5 was already

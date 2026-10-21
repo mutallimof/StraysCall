@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — optional demo seed
+-- Stray's Call — optional demo seed
 -- ----------------------------------------------------------------------------
 -- Vets sign up through the app, but for local testing you can create a few
 -- demo clinics around Baku. This requires auth users to exist first, so the

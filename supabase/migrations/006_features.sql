@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 006: growth-critical backend features
+-- Stray's Call — migration 006: growth-critical backend features
 -- ----------------------------------------------------------------------------
 -- 1. Time-to-acceptance metrics (admin stats RPC) — the survival metric the
 --    research pass identified: does a report reliably get a response?

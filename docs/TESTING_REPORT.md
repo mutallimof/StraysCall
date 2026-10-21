@@ -1,4 +1,4 @@
-# PawLine — Adversarial Testing & Security Audit Report
+# Stray's Call — Adversarial Testing & Security Audit Report
 
 *Excellence pass, July 2026. Method: no live multi-browser simulation is
 available in this environment, so this was done the systematic way — a

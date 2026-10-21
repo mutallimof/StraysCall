@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 018: A2, private case-photos bucket + signed URLs
+-- Stray's Call — migration 018: A2, private case-photos bucket + signed URLs
 -- ----------------------------------------------------------------------------
 -- Source: docs/FIX_SPEC.md A2, previously flagged (migration 011) and now
 -- actioned. case-photos was public=true, so image bytes were fetchable by

@@ -1,4 +1,4 @@
-# PawLine — Operations Guide
+# Stray's Call — Operations Guide
 
 How to run the platform day to day, and where mistakes can cause real harm.
 Written for an operator who is still learning the stack — every routine task
@@ -70,7 +70,7 @@ honestly that treatment may be delayed — reporting is never blocked, because
 the animal still has to be found first.
 
 ### Stats (the health check)
-**Admin → Stats** shows the number that decides whether PawLine survives:
+**Admin → Stats** shows the number that decides whether Stray's Call survives:
 **median time-to-acceptance** over 30 days, plus resolved counts, active
 rescuers, and approved clinics. Under ~30 minutes = healthy liquidity;
 climbing = recruit rescuers/partners in that area before anything else.

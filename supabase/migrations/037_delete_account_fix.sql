@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 037: account deletion that actually completes
+-- Stray's Call — migration 037: account deletion that actually completes
 -- ----------------------------------------------------------------------------
 -- Bug: delete_my_account() (009) sets case_messages.sender_id = null, but that
 -- column is NOT NULL (001), so deletion raised for anyone who had ever posted

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 002: user language preference
+-- Stray's Call — migration 002: user language preference
 -- ----------------------------------------------------------------------------
 -- Adds profiles.locale ('az' default — launch market), lets users update it,
 -- and teaches the signup trigger to carry over a language chosen while

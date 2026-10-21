@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 /* ============================================================================
- * PawLine — custom service worker (vite-plugin-pwa injectManifest strategy).
+ * Stray's Call — custom service worker (vite-plugin-pwa injectManifest strategy).
  *
  * Replaces the previous auto-generated worker so we can handle Web Push:
  *  - Precache the app shell (same behavior as before).
@@ -141,7 +141,7 @@ self.addEventListener('notificationclick', (event: NotificationEvent) => {
   event.waitUntil(
     (async () => {
       const all = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-      // Reuse an open PawLine window if there is one.
+      // Reuse an open Stray's Call window if there is one.
       for (const client of all) {
         if ('focus' in client) {
           await (client as WindowClient).focus();

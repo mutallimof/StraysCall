@@ -1,4 +1,4 @@
-# PawLine Design System
+# Stray's Call Design System
 
 *The living source of truth for visual decisions. Every value here exists
 as a CSS custom property in `src/styles/index.css` (§1, §13, §14) — code

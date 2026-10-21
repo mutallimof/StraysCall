@@ -1,4 +1,4 @@
-# PawLine — Architecture
+# Stray's Call — Architecture
 
 This document explains the non-obvious design decisions. Read alongside
 `supabase/migrations/001_init.sql`, which contains the authoritative
@@ -78,7 +78,7 @@ deliver them to push subscriptions.
 
 They share nothing but the message-bubble styling. The platform never
 processes payments — the case chat is information-sharing only, which keeps
-PawLine free of financial liability by design.
+Stray's Call free of financial liability by design.
 
 ## 4. Guests
 

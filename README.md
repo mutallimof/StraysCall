@@ -338,7 +338,7 @@ public/                    icons and favicon
 docs/                      ARCHITECTURE, DEPLOYMENT, OPERATOR_GUIDE, OPERATIONS,
                            DESIGN_SYSTEM, DESIGN_TOKENS, MONETIZATION,
                            SECURITY_AUDIT_DEPS, TESTING_REPORT,
-                           privacy-policy-draft, pawline-spec, design-v3/
+                           privacy-policy-draft, strays-call-spec, design-v3/
 ```
 
 ## Screenshots

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 005: security audit fixes
+-- Stray's Call — migration 005: security audit fixes
 -- ----------------------------------------------------------------------------
 -- Every change here maps to a numbered finding in docs/TESTING_REPORT.md.
 -- Run after 001–004. On a FRESH project run the (fixed) 004 first; on an

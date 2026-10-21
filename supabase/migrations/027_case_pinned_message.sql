@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 027: one pinned message per case, pinnable by its vet
+-- Stray's Call — migration 027: one pinned message per case, pinnable by its vet
 -- ----------------------------------------------------------------------------
 -- WHY
 -- A clinic that accepts an animal posts its condition and, in practice, bank

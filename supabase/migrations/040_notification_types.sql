@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 040: per-type notification switches
+-- Stray's Call — migration 040: per-type notification switches
 -- ----------------------------------------------------------------------------
 -- Four switches on the profile, all ON by default:
 --   notify_new_cases       — new cases nearby (and the escalation re-alerts)

@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 028: a vet may pin only their OWN message
+-- Stray's Call — migration 028: a vet may pin only their OWN message
 -- ----------------------------------------------------------------------------
 -- 027 let the case's vet pin ANY message in the thread. The UI now offers the
 -- pin only on the vet's own messages — a clinic pins its condition update or

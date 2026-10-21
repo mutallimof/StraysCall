@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 010: vet operating hours
+-- Stray's Call — migration 010: vet operating hours
 -- ----------------------------------------------------------------------------
 -- THE PROBLEM THIS FIXES
 -- Vets only had a manual `is_open` toggle. If a clinic closed for the night

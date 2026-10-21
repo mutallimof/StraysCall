@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 038: data retention
+-- Stray's Call — migration 038: data retention
 -- ----------------------------------------------------------------------------
 -- Periods (decided):
 --   - case chat (case_messages): 90 days after the case is resolved/closed

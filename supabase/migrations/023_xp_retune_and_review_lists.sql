@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 023: XP retune, hidden-gated report XP, review-only
+-- Stray's Call — migration 023: XP retune, hidden-gated report XP, review-only
 -- abuse-signal lists
 -- ----------------------------------------------------------------------------
 -- 1. award_xp() retuned: reporter +10 → +5, rescuer +50 → +10. Vet XP (+30)

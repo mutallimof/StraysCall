@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 007: pre-launch completeness
+-- Stray's Call — migration 007: pre-launch completeness
 -- ----------------------------------------------------------------------------
 -- Run after 001–006. Adds, mapped to the pre-launch review items:
 --   4a  Rescuer-abandonment timeout (claimed-but-abandoned recovery)

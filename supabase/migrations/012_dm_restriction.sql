@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 012: restrict new DMs to shared-case participants
+-- Stray's Call — migration 012: restrict new DMs to shared-case participants
 -- ----------------------------------------------------------------------------
 -- get_or_create_dm() currently lets any two registered users open a DM with
 -- no relationship at all. This restricts it: a NEW conversation can only be

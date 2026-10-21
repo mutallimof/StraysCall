@@ -1,4 +1,4 @@
-# PawLine — Deployment Guide
+# Stray's Call — Deployment Guide
 
 Exact steps from zero to a live production app. Nothing here requires prior
 backend experience, but the ⚠ boxes mark the places where a mistake has real
@@ -75,7 +75,7 @@ supabase functions deploy send-push --no-verify-jwt
 
 That's it — every in-app notification row now also goes out as a push
 message to subscribed devices. Users opt in from Profile → 🔔 Enable push.
-(iPhone users must add PawLine to their home screen first — iOS rule.)
+(iPhone users must add Stray's Call to their home screen first — iOS rule.)
 
 ## Step 3 — Deploy the frontend on Vercel
 

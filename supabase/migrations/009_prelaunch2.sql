@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 009: final pre-launch backend
+-- Stray's Call — migration 009: final pre-launch backend
 -- ----------------------------------------------------------------------------
 -- Run after 001–008. Two things:
 --   1. Genuine, complete self-serve account deletion (was a client-side

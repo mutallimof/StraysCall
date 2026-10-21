@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 017: per-user read state for case chats
+-- Stray's Call — migration 017: per-user read state for case chats
 -- ----------------------------------------------------------------------------
 -- New work, not in FIX_SPEC. Case chats have no per-user "last read"
 -- marker, unlike DMs (conversation_participants.last_read_at +

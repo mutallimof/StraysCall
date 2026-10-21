@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 016: add 'ru' as a valid locale
+-- Stray's Call — migration 016: add 'ru' as a valid locale
 -- ----------------------------------------------------------------------------
 -- Flagged during Group H (Russian UI added client-side) rather than written
 -- then, per that group's instruction. Two places hardcode the locale

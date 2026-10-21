@@ -1,5 +1,5 @@
 -- ============================================================================
--- PawLine — migration 031: banned accounts can't add case photos
+-- Stray's Call — migration 031: banned accounts can't add case photos
 -- ----------------------------------------------------------------------------
 -- The two rules that gate case photos (005) never checked for a ban:
 --   - public.case_photos INSERT: report photos by the case's creator,
