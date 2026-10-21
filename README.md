@@ -1,8 +1,8 @@
 # Stray's Call
 
 Stray's Call is a mobile-first Progressive Web App for reporting injured stray
-animals and getting them to a veterinary clinic. It is built for Azerbaijan,
-with Turkish and English translations.
+animals and getting them to a veterinary clinic. It is built for Azerbaijan
+and available in Azerbaijani, Turkish and English.
 
 How a case moves through the app:
 
