@@ -36,7 +36,24 @@ you what success looks like.
    "Success. No rows returned":
    `001_init.sql` → `002_locale.sql` → `003_production.sql` →
    `004_grants.sql` → `005_security.sql` → `006_features.sql` →
-   `007_prelaunch.sql` → `008_performance.sql` → `009_prelaunch2.sql` → `010_vet_hours.sql`.
+   `007_prelaunch.sql` → `008_performance.sql` → `009_prelaunch2.sql` →
+   `010_vet_hours.sql` → `011_security.sql` → `012_dm_restriction.sql` →
+   `013_escalation_timeline.sql` → `014_vet_profiles.sql` →
+   `015_reporter_abuse.sql` → `016_locale_ru.sql` →
+   `017_case_chat_read_state.sql` → `018_private_case_photos.sql` →
+   `019_vets_upsert_grant.sql` → `020_upsert_my_vet_rpc.sql` →
+   `021_case_limits_tightened.sql` → `022_case_urgency.sql` →
+   `023_xp_retune_and_review_lists.sql` → `024_oauth_signup_metadata.sql` →
+   `025_become_vet_rpc.sql` → `027_case_pinned_message.sql` →
+   `028_pin_own_message_only.sql` → `029_case_street_address.sql` →
+   `030_admin_list_users.sql` → `031_photo_uploads_ban_check.sql` →
+   `032_vet_only_dms_and_closable_case_chat.sql` →
+   `033_ban_case_actions.sql` → `034_terms_consent.sql` →
+   `035_guest_report_consent.sql` → `036_case_privacy.sql` →
+   `037_delete_account_fix.sql` → `038_retention.sql` →
+   `039_vet_documents_mime.sql` → `040_notification_types.sql` →
+   `041_case_needs.sql`.
+   There is no `026` file (it never existed); go from `025` to `027`.
    - ❌ *If a file errors:* stop. Don't skip ahead. Copy the error message
      and the file name into a new chat with an AI assistant along with the
      file's contents — the fix is usually a one-liner. (The migrations are
@@ -45,14 +62,16 @@ you what success looks like.
    - Email: leave **on**.
    - **Allow anonymous sign-ins: turn ON** (guest reporting needs it).
 4. **Database → Extensions** → search `pg_cron` → enable it if it isn't
-   already. (This runs the "case sat unanswered for 30 minutes → alert more
-   people" escalation job. Migration 006 scheduled it; the extension just
-   needs to be on.)
+   already. It runs two jobs: the hourly case maintenance (escalation of
+   unanswered cases, abandoned-rescue revert, expiry; scheduled by
+   `011_security.sql`) and the daily data retention job (scheduled by
+   `038_retention.sql`).
    - ✅ *Check it worked:* SQL Editor → run
      `select jobname from cron.job;` → you should see
-     `pawline-escalate-stale-cases`. If the table doesn't exist, re-run
-     just the last block of `006_features.sql` (and the cron block in `007_prelaunch.sql`) after enabling the
-     extension.
+     `pawline-case-maintenance` and `pawline-retention`. If the table
+     doesn't exist, enable the extension and re-run the cron block in
+     `011_security.sql` and the scheduling block in
+     `038_retention.sql`.
 5. **Settings → API**: copy two values into your password manager:
    - **Project URL** (like `https://abcd1234.supabase.co`)
    - **anon public** key (long string starting `eyJ…`)
@@ -480,6 +499,9 @@ moderation action is reversible. When in doubt, do the reversible thing.
 
 ### B12. Data retention (migration 038) and the photo cleanup still to build
 
+The photo retention job described below is planned and not yet built.
+There is no migration or Edge Function for it in the repository.
+
 **What runs by itself:** pg_cron job `pawline-retention`, daily at 03:17 UTC,
 calls `run_retention(false)`. It deletes case chat 90 days after a case is
 resolved/closed (unpinning first; a message with an **open** content report
@@ -510,7 +532,8 @@ The plan, when it's time:
    have passed (the rest waits for the next day). Files first, rows second:
    if the row delete fails, the next run retries, and removing an
    already-missing file is harmless. `{"dry_run": true}` returns counts only.
-2. **Migration 039:** the two SQL helpers (service role only, execute
+2. **A new migration** (not written yet, no number assigned): the two SQL
+   helpers (service role only, execute
    revoked from anon/authenticated), `create extension if not exists pg_net`,
    and pg_cron job `pawline-retention-photos` at 03:37 UTC (after
    `pawline-retention`). Its `net.http_post` reads the URL and secret from
@@ -519,7 +542,7 @@ The plan, when it's time:
    [TO CONFIRM] note from `docs/privacy-policy-draft.md`.
 
 Manual setup, once it's built:
-1. Apply 039 (SQL Editor).
+1. Apply the new migration (SQL Editor).
 2. Generate a long random secret → password manager.
 3. `supabase secrets set RETENTION_SECRET=<secret>`
 4. `supabase functions deploy retention-photos --no-verify-jwt`
