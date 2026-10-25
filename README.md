@@ -307,12 +307,13 @@ Run in this order. Migration `026` does not exist and never did.
 | `039_vet_documents_mime.sql` | Clinic documents limited to JPEG, PNG, WebP, HEIC and PDF |
 | `040_notification_types.sql` | Per-type notification switches, enforced in the database |
 | `041_case_needs.sql` | "Needs" list on a case and `set_case_needs()` |
+| `042_app_name_in_notifications.sql` | Replaces "PawLine" with "Stray's Call" in two notification texts, including stored ones |
 
 ## Project layout
 
 ```
 supabase/
-  migrations/              SQL migrations 001-041 (no 026)
+  migrations/              SQL migrations 001-042 (no 026)
   functions/send-push/     Web Push delivery
   functions/delete-account/ account deletion including Storage files
   seed.sql                 notes for seeding demo clinics

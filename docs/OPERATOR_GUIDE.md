@@ -52,7 +52,8 @@ you what success looks like.
    `035_guest_report_consent.sql` → `036_case_privacy.sql` →
    `037_delete_account_fix.sql` → `038_retention.sql` →
    `039_vet_documents_mime.sql` → `040_notification_types.sql` →
-   `041_case_needs.sql`.
+   `041_case_needs.sql` →
+   `042_app_name_in_notifications.sql`.
    There is no `026` file (it never existed); go from `025` to `027`.
    - ❌ *If a file errors:* stop. Don't skip ahead. Copy the error message
      and the file name into a new chat with an AI assistant along with the
